@@ -1,0 +1,2 @@
+/*! MIT License - Copyright (c) 2016 Philip Birk-Jensen <philip@birk-jensen.dk> */
+!function(e){"use strict";var t=function(){var e=null;Object.defineProperty(this,"element",{enumerable:!0,get:function(){return e},set:function(t){e&&e.eObject&&delete e.eObject,t&&(t.eObject=this),e=t}})};t.prototype.destroy=function(){this.element=null},t.get=function(e){return!(!e||!e.eObject)&&e.eObject},"object"==typeof module&&module.exports?module.exports=t:"function"==typeof define&&define.amd?define(function(){return t}):e.ElementObject=t}(this);
