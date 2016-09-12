@@ -5,7 +5,7 @@
   const
     document = require('global/document'),
     test = require('tape'),
-    ElementObject = require('../../src/ElementObject');
+    ElementObject = require('../ElementObject');
 
   test('Extending the class.', function (assert) {
     class SomeClass extends ElementObject {

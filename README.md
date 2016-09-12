@@ -1,5 +1,5 @@
 # ElementObject
-A base class that helps with connecting your class to a DOMElement.
+A simple base class that helps with connecting your class to a DOMElement.
 
 
 ## Installation

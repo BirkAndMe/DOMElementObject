@@ -1,13 +1,16 @@
 var gulp = require('gulp');
 
 gulp.task('default', function() {
-  var uglify = require('gulp-uglify');
+  var
+    uglify = require('gulp-uglify'),
+    rename = require('gulp-rename');
 
-  gulp.src('src/**/*.js')
+  gulp.src('ElementObject.js')
     .pipe(uglify({
       preserveComments: 'license'
     }))
-    .pipe(gulp.dest('dist'));
+    .pipe(rename('ElementObject.min.js'))
+    .pipe(gulp.dest('./'));
 });
 
 gulp.task('test', function() {
