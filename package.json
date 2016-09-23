@@ -2,7 +2,7 @@
   "name": "element-object",
   "version": "1.0.0",
   "description": "Connect a DOMElement to an object.",
-  "main": "ElementObject.js",
+  "main": "ElementObject.min.js",
   "scripts": {
     "test": "gulp test",
     "build": "gulp"
@@ -18,7 +18,7 @@
     "Base"
   ],
   "files": [
-    "dist"
+    "ElementObject.min.js"
   ],
   "author": "Philip Birk-Jensen <philip@birk-jensen.dk>",
   "license": "MIT",
