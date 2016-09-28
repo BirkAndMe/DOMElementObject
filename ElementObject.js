@@ -72,7 +72,10 @@
   /**
    * Destroy
    */
-  ElementObject.prototype.destroy = function () {
+  ElementObject.prototype.destroy = function (removeElement) {
+    if (removeElement === true) {
+      this.element.parentNode.removeChild(this.element);
+    }
     this.element = null;
   };
 
