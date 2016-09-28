@@ -16,12 +16,14 @@ gulp.task('default', function() {
 gulp.task('test', function() {
   var
     babel = require('gulp-babel'),
-    tape = require('gulp-tape');
+    tape = require('gulp-tape'),
+    rename = require('gulp-rename');
 
-  gulp.src('tests/*.js')
+  gulp.src('tests/ElementObject.js')
     .pipe(babel({
       presets: ['es2015']
     }))
-    .pipe(gulp.dest('tests/compiled'))
+    .pipe(rename('ElementObject.compiled.js'))
+    .pipe(gulp.dest('tests/'))
     .pipe(tape());
 });
