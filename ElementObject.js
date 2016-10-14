@@ -93,6 +93,36 @@
     return false;
   };
 
+  /**
+   * Execute the a function, for each of the elements connected to an objects.
+   *
+   * @param {Array} elements
+   *   An array of elements.
+   * @param {Function} callback
+   *   The callback function.
+   */
+  ElementObject.eachObject = function (elements, callback) {
+    var
+      item, i,
+      count = elements.length,
+      items = [];
+
+    //
+    if (typeof callback !== 'function') {
+      callback = function () { };
+    }
+
+    for (i = 0; i < count; i++) {
+      item = ElementObject.get(elements[i]);
+
+      if (item !== false) {
+        callback(item);
+        items.push(item);
+      }
+    }
+
+    return items;
+  };
 
   // ---------------------------------------------------------------------------
   // Expose this to nodejs, AMD or any scope.
