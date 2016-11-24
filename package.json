@@ -1,6 +1,6 @@
 {
   "name": "element-object",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Connect a DOMElement to an object.",
   "main": "ElementObject.min.js",
   "scripts": {
