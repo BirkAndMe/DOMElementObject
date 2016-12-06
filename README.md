@@ -39,6 +39,18 @@ console.log(ElementObject.get(someElement));
 someObject.destroy();
 ```
 
+Use the `eachObject()` function to run through a list of elements:
+```js
+let elements = this.element.querySelectorAll('.selector');
+
+// This returns a list of all the elements that have objects connected.
+// So it can also be used to "filter" DOMElements without a connected object.
+ElementObject.eachObject(elements, item => {
+  // Logs the actual object, and not the DOMElement.
+  console.log(item);
+});
+```
+
 ## Note
 There's nothing that forces this to be used with a DOMElement, in theory it can
 be used with any object.
