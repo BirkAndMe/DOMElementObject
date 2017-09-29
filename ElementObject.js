@@ -107,7 +107,6 @@
       count = elements.length,
       items = [];
 
-    //
     if (typeof callback !== 'function') {
       callback = function () { };
     }
@@ -127,7 +126,6 @@
   // ---------------------------------------------------------------------------
   // Expose this to nodejs, AMD or any scope.
   // TODO Check if this works in an AMD environment.
-  // TODO Check if this works in a scoped (browser) evironment.
   if (typeof module === 'object' && module.exports) {
     module.exports = ElementObject;
   } else if (typeof define === 'function' && define.amd) {
