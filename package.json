@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/BirkAndMe/DOMElementObject.git"
+    "url": "https://github.com/BirkAndMe/ElementObject"
   },
   "keywords": [
     "DOM",
